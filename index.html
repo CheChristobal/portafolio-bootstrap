@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-3">
+        <h1>Mi Portafolio</h1>
+        <p>Desarrollador Web Front-End & Back-End</p>
+    </header>
+
+    <!-- Sidebar (navegación lateral) -->
+    <nav id="sidebar" class="d-none d-md-block">
+        <div class="sidebar-content">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#about">Sobre Mí</a></li>
+                <li class="nav-item"><a class="nav-link" href="#education">Educación</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experiencia</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Navbar superior (menú de hamburguesa en móviles) -->
+    <nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-dark d-md-none">
+        <a class="navbar-brand" href="#">Inicio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">Sobre Mí</a></li>
+                <li class="nav-item"><a class="nav-link" href="#education">Educación</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experiencia</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main-content" class="container mt-4">
+        <section id="about">
+            <h2>Sobre Mí</h2>
+            <p>Hola, soy Cristobal Eduardo Echeverria Olivo, un desarrollador web con más de 2 años de experiencia en la creación de sitios web interactivos y aplicaciones web. Me especializo en tecnologías como HTML, CSS, JavaScript y frameworks modernos como React y Angular. Mi pasión por el desarrollo web se combina con un fuerte sentido del diseño y la experiencia del usuario.</p>
+        </section>
+        <section id="education" class="mt-4">
+            <section id="education" class="mt-4">
+                <h2>Educación</h2>
+                <ul>
+                    <li>Certificación en Desarrollo Web Front-End - Code Academy (Enero 2020 - Junio 2020)</li>
+                    <li>Certificación en Desarrollo Web Back-End - Udacity (Julio 2020 - Diciembre 2021)</li>
+                    <li>Analista Programador - IACC (Marzo 2021 - Junio 2023)</li>
+                </ul>
+            </section>
+            
+            <section id="experience" class="mt-4">
+                <h2>Experiencia Laboral</h2>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Desarrollador Trainer</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Innovative Tech - Enero 2021 / Diciembre 2021</h6>
+                        <p class="card-text">Impartí formación a nuevos desarrolladores sobre tecnologías web, incluyendo HTML, CSS, y JavaScript. Desarrollé material educativo y sesiones prácticas para mejorar las habilidades técnicas y el conocimiento del equipo.</p>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Desarrollador Web Junior</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Web Innovators - Junio 2019 / Diciembre 2021</h6>
+                        <p class="card-text">Desarrollé y mantuve sitios web y aplicaciones web utilizando HTML, CSS, y JavaScript. Implementé características interactivas y soluciones de diseño responsivo para mejorar la experiencia del usuario.</p>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Desarrollador Web Full Stack</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Tech Solutions - Enero 2022 / Actualidad</h6>
+                        <p class="card-text">Lidero el equipo de desarrollo en la creación de aplicaciones web utilizando React y Node.js. Trabajo estrechamente con los diseñadores para implementar interfaces intuitivas y funcionales. Me encargo de la integración de APIs y la optimización del rendimiento del sitio.</p>
+                    </div>
+                </div>
+            </section>
+            
+        <section id="skills" class="mt-4">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>HTML5 y CSS3</li>
+                <li>JavaScript (ES6+)</li>
+                <li>React, Angular</li>
+                <li>Node.js y Express</li>
+                <li>Bootstrap y Materialize</li>
+                <li>Git y GitHub</li>
+                <li>Optimización de rendimiento web</li>
+            </ul>
+        </section>
+        <section id="projects" class="mt-4">
+            <h2>Proyectos</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img data-src="assets/img/portafolio1.png" class="card-img-top" alt="Proyecto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Programa Educativo de Tercero Medio</h5>
+                            <p class="card-text">Desarrollé una plataforma educativa para estudiantes de tercero medio, con recursos interactivos y evaluaciones en línea para mejorar la experiencia de aprendizaje.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img data-src="assets/img/portafolio2.png" class="card-img-top" alt="Proyecto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Productos de Belleza</h5>
+                            <p class="card-text">Creé un sitio web para una tienda de productos de belleza, incluyendo características de filtro por categoría, carrito de compras, y opciones de pago en línea.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img data-src="assets/img/portafolio3.png" class="card-img-top" alt="Proyecto 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Venta de Llantas y Neumáticos</h5>
+                            <p class="card-text">Desarrollé una plataforma de comercio electrónico para la venta de llantas y neumáticos de auto, con opciones de búsqueda avanzada, comparaciones de productos y un sistema de pedidos en línea.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="testimonials" class="mt-4">
+            <h2>Testimonios</h2>
+            <div class="card">
+                <div class="card-body">
+                    <blockquote class="blockquote">
+                        <p class="mb-0">"Cristobal es un desarrollador increíblemente talentoso. Su atención al detalle y habilidad para resolver problemas es sobresaliente."</p>
+                        <footer class="blockquote-footer">Ana Martínez, CEO en Tech Solutions</footer>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="card mt-3">
+                <div class="card-body">
+                    <blockquote class="blockquote">
+                        <p class="mb-0">"Trabajar con Cristobal en el proyecto de nuestra tienda en línea fue una experiencia positiva. Su experiencia en React y Node.js hizo una gran diferencia."</p>
+                        <footer class="blockquote-footer">Carlos López, Fundador en Web Innovators</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="mt-4">
+            <h2>Contacto</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <p>&copy; 2024 Cristobal Echeverria Olivo</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
