@@ -4,6 +4,8 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
 }
 
 /* Estilo para el sidebar */
@@ -18,6 +20,7 @@ body {
     box-shadow: 4px 0 8px rgba(0, 0, 0, 0.2); /* Sombra para separación */
     transition: transform 0.3s ease;
     z-index: 1000;
+    overflow-y: auto; /* Asegura que el contenido largo sea desplazable */
 }
 
 #sidebar .navbar-nav {
@@ -35,14 +38,12 @@ body {
     background-color: #495057;
 }
 
-/* Estilo para el navbar en dispositivos móviles */
+/* Estilo para el navbar */
 #navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: #343a40; /* Fondo oscuro para el navbar en móvil */
+    background-color: #343a40; /* Fondo oscuro para el navbar */
+    position: relative; /* Posición relativa para asegurar que el header aparezca debajo */
 }
 
 /* Estilo del contenido principal para ajustar al sidebar */
@@ -149,6 +150,7 @@ header {
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Opcional: Añadir sombra para profundidad */
     transition: transform 0.3s ease; /* Transición suave para el efecto de agrandamiento */
+    margin-top: 56px; /* Ajustar el margen superior para que aparezca debajo del navbar */
 }
 
 /* Estilo para el texto dentro del header */
@@ -175,4 +177,38 @@ h1, h2, h3, h4, h5, h6, p, a, span {
 
 h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover, p:hover, a:hover, span:hover {
     transform: scale(1.05); /* Agrandar el texto al pasar el cursor */
+}
+
+/* Estilo para el footer */
+footer {
+    background-color: #343a40; /* Fondo oscuro para el footer */
+    color: #ffffff; /* Texto blanco */
+}
+
+/* Estilo para los enlaces en el footer */
+footer a {
+    color: #ffffff; /* Color blanco para los enlaces */
+    text-decoration: none; /* Eliminar subrayado en los enlaces */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Subrayar en el hover */
+}
+
+/* Espaciado y alineación del contenido en el footer */
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .row {
+    margin-bottom: 20px; /* Espacio entre las filas del footer */
+}
+
+footer h5 {
+    margin-bottom: 15px; /* Espacio debajo de los títulos */
+}
+
+footer p {
+    margin-bottom: 10px; /* Espacio debajo de los párrafos */
 }
